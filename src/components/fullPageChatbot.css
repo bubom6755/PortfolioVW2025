@@ -1,0 +1,136 @@
+.fullpage-chatbot-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+  }
+  
+  .sidebar-bar {
+    position: fixed;
+    left: 40px;
+    top: 25%;
+    height: 20%;
+    width: 2px;
+    background-color: #adacac;
+    z-index: 1000;
+  }
+  
+  .sidebar-text {
+    position: absolute;
+    padding-left: 30px;
+    top: -10%;
+    left: 0;
+    transform: rotate(-90deg);
+    transform-origin: left center;
+    background: none;
+    border: none;
+    color: #adacac;
+    font-size: 14px;
+    font-family: "LEMONMILK-Light", Arial, sans-serif;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  
+  .sidebar-text:hover {
+    color: white;
+  }
+  
+  .sidebar-bar:hover {
+    background-color: white;
+  }
+  
+  .fullpage-chatbot-content {
+    width: 100%;
+    max-width: 600px;
+    background-color: #111;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+  }
+  
+  .fullpage-chatbot-content h2 {
+    background-color: #222;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    font-size: 1.5em;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  
+  .fullpage-chatbot-messages {
+    padding: 20px;
+    height: 400px;
+    overflow-y: auto;
+    border-bottom: 1px solid #333;
+  }
+  
+  .fullpage-chatbot-message {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .user-message {
+    background-color: #333;
+    text-align: right;
+  }
+  
+  .bot-message {
+    background-color: #444;
+    text-align: left;
+  }
+  
+  .fullpage-chatbot-form {
+    display: flex;
+    padding: 10px;
+    background-color: #222;
+  }
+  
+  .fullpage-chatbot-form input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #111;
+    color: #fff;
+  }
+  
+  .fullpage-chatbot-form button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+  }
+  
+  .fullpage-chatbot-form button:hover {
+    background-color: #ddd;
+  }
+  
+  .fullpage-chatbot-placeholder {
+    color: #aaa;
+    text-align: center;
+  }
+  
+  .fullpage-chatbot-redirect-btn {
+    display: block;
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #555;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .fullpage-chatbot-redirect-btn:hover {
+    background-color: #666;
+  }
+  
