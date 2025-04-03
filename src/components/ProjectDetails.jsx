@@ -55,15 +55,16 @@ const projects = [
     vue: " https://pokedex-victor.vercel.app/"
   },
   {
-    id: 6,
-    title: "Shenron",
-    description: "Conçue spécialement pour l'école Shenron, Sign Connect répond aux besoins d’une gestion moderne des signatures. En combinant une technologie de scan performante et une sécurisation avancée des données, elle garantit une expérience utilisateur fiable et efficace.",
-    description2: "Avec une navigation optimisée et un design pensé pour la praticité, Sign Connect offre une solution rapide et accessible pour signer en toute sécurité. Son intégration intuitive permet à chaque utilisateur de valider sa présence ou son engagement sans difficulté.",
-    details: "Mon application mobile Sign Connect, développée en React, permet aux utilisateurs de scanner un QR code et de signer numériquement en toute simplicité. Grâce à une interface fluide et intuitive, elle facilite le processus de validation et d’authentification en quelques secondes.",
-    technologies: ["React", " - Three.js", " - GSAP"],
-    date: "2024",
-    categorie: ["Web developpement",],
-    images: [img3, img31, img32,img33],
+    id: 3,
+    title: "Joy",
+    description: "Le site a été développé avec une attention particulière aux performances et à la compatibilité sur tous les appareils. Grâce à une structure claire et un design responsive, Joy offre une expérience d’achat agréable et immersive.",
+    details: "Mon projet Joy est un site e-commerce dédié à la vente de bougies, développé en HTML, CSS et PHP. J’ai conçu l’intégralité du site ainsi que l’identité visuelle de la marque, en créant un univers chaleureux et raffiné..",
+    description2:"Le design du site a été soigneusement travaillé pour refléter l’élégance et l’artisanat des bougies Joy. J’ai réalisé le logo, la palette de couleurs et l’ensemble des visuels afin d’offrir une identité forte et cohérente à la marque.",
+    description3:"L’expérience utilisateur a été optimisée grâce à une navigation fluide et intuitive, permettant aux visiteurs de découvrir facilement les différentes collections et de passer commande en toute simplicité.",
+    technologies: ["PHP", " - HTML", " - CSS Animations"],
+    date: "2023",
+    categorie: ["Web developpement"," - Personal project"],
+    images: [img6 , img61, img62, img63],
     vue: " none"
   },
   {
@@ -93,18 +94,18 @@ const projects = [
     vue: " none"
   },
   {
-    id: 3,
-    title: "Joy",
-    description: "Le site a été développé avec une attention particulière aux performances et à la compatibilité sur tous les appareils. Grâce à une structure claire et un design responsive, Joy offre une expérience d’achat agréable et immersive.",
-    details: "Mon projet Joy est un site e-commerce dédié à la vente de bougies, développé en HTML, CSS et PHP. J’ai conçu l’intégralité du site ainsi que l’identité visuelle de la marque, en créant un univers chaleureux et raffiné..",
-    description2:"Le design du site a été soigneusement travaillé pour refléter l’élégance et l’artisanat des bougies Joy. J’ai réalisé le logo, la palette de couleurs et l’ensemble des visuels afin d’offrir une identité forte et cohérente à la marque.",
-    description3:"L’expérience utilisateur a été optimisée grâce à une navigation fluide et intuitive, permettant aux visiteurs de découvrir facilement les différentes collections et de passer commande en toute simplicité.",
-    technologies: ["PHP", " - HTML", " - CSS Animations"],
-    date: "2023",
-    categorie: ["Web developpement"," - Personal project"],
-    images: [img6 , img61, img62, img63],
+    id: 6,
+    title: "Shenron",
+    description: "Conçue spécialement pour l'école Shenron, Sign Connect répond aux besoins d’une gestion moderne des signatures. En combinant une technologie de scan performante et une sécurisation avancée des données, elle garantit une expérience utilisateur fiable et efficace.",
+    description2: "Avec une navigation optimisée et un design pensé pour la praticité, Sign Connect offre une solution rapide et accessible pour signer en toute sécurité. Son intégration intuitive permet à chaque utilisateur de valider sa présence ou son engagement sans difficulté.",
+    details: "Mon application mobile Sign Connect, développée en React, permet aux utilisateurs de scanner un QR code et de signer numériquement en toute simplicité. Grâce à une interface fluide et intuitive, elle facilite le processus de validation et d’authentification en quelques secondes.",
+    technologies: ["React", " - Three.js", " - GSAP"],
+    date: "2024",
+    categorie: ["Web developpement",],
+    images: [img3, img31, img32,img33],
     vue: " none"
-  }
+  },
+
 ];
 
 const ProjectDetails = () => {
