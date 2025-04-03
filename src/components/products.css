@@ -1,6 +1,7 @@
 /* --------------------------- */
 /*  Container global           */
 /* --------------------------- */
+
 .products-container {
     display: flex;
     flex-direction: column;
@@ -138,6 +139,12 @@
   gap: 2rem; /* Espace entre le bloc et le texte */
   margin-bottom: 3rem; /* Espacement avec les blocs suivants */
 }
+@media (max-width: 768px) {
+  .first-section {
+    flex-direction: column-reverse; /* Colonne sur mobile */
+    align-items: center; /* Centrer le contenu */
+  }
+}
 
 /* Texte à droite du premier bloc */
 .text-section {
@@ -160,3 +167,24 @@
   color: #a09f9f; /* Texte plus discret */
 }
 
+@media (max-width: 768px) {
+  .text-section{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .first-section {
+    flex-direction: column-reverse; /* Colonne sur mobile */
+    align-items: center; /* Centrer le contenu */
+  }
+  .text-section h2{
+    text-align: center; /* Centrer le texte sur mobile */
+    margin-right: 0; /* Supprimer le margin sur mobile */
+    font-size: 5em;
+  }
+  .text-section p {
+    margin-left: 0; /* Supprimer le margin sur mobile */
+    text-align: center; /* Centrer le texte sur mobile */
+    font-size: 1.2em;
+  }
+}

@@ -150,10 +150,15 @@ export const ContactButton = styled.button`
   letter-spacing: 1px;
   cursor: pointer;
   width: fit-content;
-  margin-left: 25%;
+  margin-left: 25%; /* Marge par défaut */
 
   &:hover {
     background-color: #fff;
     color: #000;
+  }
+
+  /* Media query pour enlever la marge sur les petits écrans */
+  @media (max-width: 768px) {
+    margin-left: 0; /* Enlève la marge sur les écrans petits */
   }
 `;

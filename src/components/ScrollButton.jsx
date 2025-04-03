@@ -25,6 +25,7 @@ const StyledWrapper = styled.div`
     box-shadow: 0px 0px 10px rgb(255, 255, 255);
     position: relative;
   }
+  
 
   .scroll {
     width: 5px;
@@ -46,7 +47,11 @@ const StyledWrapper = styled.div`
     left: 50%;
     transform: translateX(-50%);
   }
-  
+  @media (max-width: 600px) {
+    .btn {
+      display: none;
+    }
+  }
   /* Trait descendant */
   .btn:before {
     content: '';

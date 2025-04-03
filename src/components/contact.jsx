@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import { useLanguage } from "../components/languageContext"; // Importation du contexte
 
 const Contact = () => {
@@ -66,11 +66,22 @@ const Contact = () => {
 
     window.location.href = mailtoLink;
   };
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const isMobile = windowWidth <= 768;
 
   return (
-    <div style={styles.container}>
+    <div style={{ ...styles.container, flexDirection: isMobile ? "column" : "row" }}>
       {/* Formulaire de contact */}
-      <div style={styles.contactForm}>
+      <div style={{ ...styles.contactForm, borderRight: isMobile ? "none" : "1px solid white"}}>
         <h2 style={styles.title}>{translations[language].contactMe}</h2>
         <form onSubmit={handleSubmit} style={styles.form}>
           <input
@@ -149,7 +160,7 @@ const Contact = () => {
 const styles = {
   container: {
     display: "flex",
-    flexDirection: "row",
+    flexDirection: "row", // Par défaut en ligne (row)
     backgroundColor: "#000",
     color: "#fff",
     padding: "20px",
@@ -218,6 +229,13 @@ const styles = {
     textDecoration: "underline",
     transition: "opacity 0.3s",
   },
+
+    "@media (max-width: 600px)": {
+      flexDirection: "column", // Passe en colonne sur mobile
+      gap: "15px", // Espace ajusté pour les petits écrans
+      padding: "10px", // Réduit le padding pour mobile
+    },
+  
 };
 
 export default Contact;
