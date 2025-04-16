@@ -7,6 +7,7 @@ import ScrollButton from "../components/ScrollButton";
 import Products from "../components/Products";
 import Contact from "../components/contact";
 import { useLanguage } from "../components/languageContext"; // Importation du contexte
+import { color } from "framer-motion";
 
 function Home() {
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
@@ -101,7 +102,15 @@ function Home() {
 
       <MainContent>
         <LeftSection>
-          <SmallText>creative</SmallText>
+          <SmallText>
+            creativ
+            <a
+              style={{ color: "#ccc", textDecoration: "none" }}
+              href="/eliott.html"
+            >
+              e
+            </a>
+          </SmallText>
           <BigTitle>
             <div>
               <h2>{translations[language].designer}</h2>
@@ -296,10 +305,11 @@ export const MainContent3 = styled.main`
   padding: 2rem 3rem;
   margin-bottom: 200px;
 
-  /* --- MOBILE (max-width: 600px) : stack en colonne --- */
   @media (max-width: 600px) {
+    diplay: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    align-content: center;
     margin-bottom: 80px;
   }
 `;
